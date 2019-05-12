@@ -24,6 +24,9 @@ body{
     border-bottom: 1px solid gray;
     background-color: whitesmoke;
     margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(45, 48, 126);
 }
 #to-do-field:focus{
     outline: 0;
