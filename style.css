@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main{
+    background-color: whitesmoke;
+    height: 570px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: auto;
+}
+.title{
+    padding-top: 20px;
+    color: rgb(45, 48, 126);
+}
+#theForm{
+    padding-top: 20px;
+}
+#to-do-field{
+    width: 70%;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+    margin-right: 10px;
+}
+#to-do-field:focus{
+    outline: 0;
+}
+
+#add{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center !important;
+}
+
+.toDoHead{
+    color: rgb(45, 48, 126);
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.delete{
+    width: 40px;
+    height: 40px;
+    text-align: center !important;
+    border-radius: 50% !important;
+    margin-left: 15px;
+}
+.done{
+    width: 40PX;
+    height: 40px;
+    border-radius: 20px !important;
+    margin-left: 30px;
+}
+
+#toDoList li{
+    color: rgb(45, 48, 126);
+    padding-bottom: 15px;
+}
