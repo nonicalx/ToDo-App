@@ -2,7 +2,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 //Connect to database
-mongoose.connect('mongodb://nonso:winner@localhost:27017/todos');
+mongoose.connect('mongodb://nonso:winner@localhost:27017/todos',{useNewUrlParser: true});
 
 //Create a schema 
 let todoSchema = new mongoose.Schema({
@@ -38,7 +38,7 @@ let Todo = mongoose.model('Todo',todoSchema,'items');
 
     app.delete('/todo/:item',(req,res)=>{
         // to delete items from mongodb
-        Todo.find({item: req.params.item.replace(/\-/g,"")}).remove((err,data)=>{
+        Todo.deleteOne({item: req.params.item.replace(/\-/g," ")},(err,data)=>{
             if(err)throw err;
             res.json(data);
         });
